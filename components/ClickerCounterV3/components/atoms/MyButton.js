@@ -1,5 +1,5 @@
-import * as React from 'react';
-import {Button, View} from 'react-native';
+import * as React from "react";
+import { Button, View } from "react-native";
 
 const MyButton = (props) => {
   return (

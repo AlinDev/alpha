@@ -1,9 +1,9 @@
-import * as React from 'react';
-import {Text, Button, View, StyleSheet} from 'react-native';
+import * as React from "react";
+import { Text, Button, View, StyleSheet } from "react-native";
 
 const Clicker = (props) => {
-  const {count, dark, onClick, onReset} = props;
-  const theme = dark ? 'dark' : 'white';
+  const { count, dark, onClick, onReset } = props;
+  const theme = dark ? "dark" : "white";
   return (
     <View style={styles[theme]}>
       <Text style={styles.container}>{count}</Text>
@@ -20,29 +20,29 @@ const Clicker = (props) => {
 const styles = StyleSheet.create({
   dark: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: "center",
     paddingTop: 20,
-    backgroundColor: '#567',
+    backgroundColor: "#567",
     padding: 8,
   },
   white: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: "center",
     paddingTop: 20,
-    backgroundColor: '#aca',
+    backgroundColor: "#aca",
     padding: 8,
   },
   container: {
-    textAlign: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#ecf0f1',
+    textAlign: "center",
+    justifyContent: "center",
+    backgroundColor: "#ecf0f1",
     padding: 8,
   },
   clickerCounter: {
-    backgroundColor: '#3a1',
+    backgroundColor: "#3a1",
   },
   primary: {
-    backgroundColor: '#a31',
+    backgroundColor: "#a31",
   },
 });
 export default Clicker;

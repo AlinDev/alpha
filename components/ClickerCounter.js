@@ -1,14 +1,14 @@
-import * as React from 'react';
-import {Text, Button, View, StyleSheet} from 'react-native';
+import * as React from "react";
+import { Text, Button, View, StyleSheet } from "react-native";
 
 class ClickerCounter extends React.Component {
-  state = {count: 0};
-  handleClick = () => this.setState((state) => ({count: state.count + 1}));
+  state = { count: 0 };
+  handleClick = () => this.setState((state) => ({ count: state.count + 1 }));
 
-  handleReset = () => this.setState({count: 0});
+  handleReset = () => this.setState({ count: 0 });
   render() {
-    const {dark} = this.props;
-    const theme = dark ? 'dark' : 'white';
+    const { dark } = this.props;
+    const theme = dark ? "dark" : "white";
 
     return (
       <>
@@ -30,29 +30,29 @@ class ClickerCounter extends React.Component {
 const styles = StyleSheet.create({
   dark: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: "center",
     paddingTop: 20,
-    backgroundColor: '#567',
+    backgroundColor: "#567",
     padding: 8,
   },
   white: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: "center",
     paddingTop: 20,
-    backgroundColor: '#aca',
+    backgroundColor: "#aca",
     padding: 8,
   },
   container: {
-    textAlign: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#ecf0f1',
+    textAlign: "center",
+    justifyContent: "center",
+    backgroundColor: "#ecf0f1",
     padding: 8,
   },
   clickerCounter: {
-    backgroundColor: '#3a1',
+    backgroundColor: "#3a1",
   },
   primary: {
-    backgroundColor: '#a31',
+    backgroundColor: "#a31",
   },
 });
 

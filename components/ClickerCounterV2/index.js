@@ -1,7 +1,7 @@
-import * as React from 'react';
-import {Text} from 'react-native';
+import * as React from "react";
+import { Text } from "react-native";
 
-import {Counter, Clicker} from './components';
+import { Counter, Clicker } from "./components";
 
 const ClickerCounterV2 = () => {
   return (

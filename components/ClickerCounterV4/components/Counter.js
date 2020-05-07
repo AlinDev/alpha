@@ -1,8 +1,8 @@
-import * as React from 'react';
+import * as React from "react";
 
 class Counter extends React.Component {
-  state = {count: 0};
-  updateCount = (val) => this.setState({count: val});
+  state = { count: 0 };
+  updateCount = (val) => this.setState({ count: val });
 
   render() {
     const stateTools = [this.state.count, this.updateCount];
