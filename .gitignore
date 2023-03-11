@@ -106,3 +106,4 @@ RNTester/Pods/*
 .vs
 /android/build/intermediates/lint-cache/
 /android/gradle.deps
+/.expo/web/cache/*
