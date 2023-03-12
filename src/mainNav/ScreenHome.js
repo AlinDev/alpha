@@ -1,5 +1,5 @@
-import {useState}                                    from "react"
-import {Button,    TextInput, View} from "react-native"
+import {useState}                      from "react"
+import {Button, Text, TextInput, View} from "react-native"
 import {ContentAsTable}                from "./ContentAsTable"
 import {Loading}                       from "./Loading"
 
@@ -11,7 +11,6 @@ export const ScreenHome = () => {
 
   const handlePress = () => {
     setIsLoading(true)
-    console.log("{ScreenHome.js}[handlePress](17) accountAddress", accountAddress)
     fetch('http://192.168.0.110:4000/api/accounts/'+accountAddress)
       .then(response => response.json())
       .then(json => setData(json.data))
@@ -30,7 +29,7 @@ export const ScreenHome = () => {
                     padding:5,fontSize:20}}
                onChangeText={setAccountAddress}
                value={accountAddress}
-               placeholder={'account address'} />
+               placeholder={'enter your account address'} placeholderTextColor={'grey'} />
       <View style={{flex:1,marginLeft:30}}>
 
    <Button style={{borderRadius:10}} title={'GO'} onPress={handlePress}  />
@@ -38,6 +37,8 @@ export const ScreenHome = () => {
     </View>
     {isLoading && <Loading />}
     {!isLoading && data &&  <ContentAsTable  data={data}/>}
+
+    {!isLoading && error &&  <Text style={{marginTop:10}}>Server is down,please try later...</Text>}
     {!isLoading && !data &&  <></>}
   </View>
 }
