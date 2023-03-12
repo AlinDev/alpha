@@ -9,13 +9,12 @@ export const ScreenHome = () => {
   const [data, setData] = useState(null)
 
 
-
   const handlePress = () => {
     setIsLoading(true)
     console.log("{ScreenHome.js}[handlePress](17) accountAddress", accountAddress)
-    fetch('https://jsonplaceholder.typicode.com/posts'+accountAddress)
+    fetch('http://192.168.0.110:4000/api/accounts/'+accountAddress)
       .then(response => response.json())
-      .then(json => setData(json))
+      .then(json => setData(json.data))
       .catch(error => setError(error))
       .finally(() => {setIsLoading(false)})
   }
@@ -29,7 +28,6 @@ export const ScreenHome = () => {
                     borderWidth:1,
                     borderRadius:10,
                     padding:5,fontSize:20}}
-               // multiline={true}
                onChangeText={setAccountAddress}
                value={accountAddress}
                placeholder={'account address'} />
