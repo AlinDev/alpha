@@ -10,7 +10,7 @@
   "deploy": "gh-pages -d web-build",
   "predeploy": "expo export:web"
   },
-  "homepage": "https://alindev.github.io/alpha",
+  "homepage": "https://alindev.github.io",
   "dependencies": {
     "@expo/webpack-config": "^18.0.1",
     "@react-navigation/native": "^6.1.6",
