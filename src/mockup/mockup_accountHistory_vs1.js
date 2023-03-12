@@ -1,37 +1,4 @@
-export const mockup_data = {
-  "address": "erd1gy7str3lx9elhnmlfcumd3g4fzryk885dljreqmjxqfwdyqfgufqep60qr",
-  "network": "devnet",
-  "versions": [
-    {
-      "balance": "1000000000000000000",
-      "nonce": 0,
-      "tx_hash": "fe49445b5515907750e237b3a2ce7186e89bb7d33ba1081ea2db54d476510fc7",
-      "version": 2,
-      "tokens": [
-        {"token": "EGLD",
-        "name": "Native Token",
-        "balance": "2222"
-        } ,
-         {"token": "UTK-xx",
-          "name": "Utrust (UTK) Token",
-         "balance": "11111"
-          }
-       ]
-    },
-    {
-      "balance": "2000000000000000000",
-      "nonce": 0,
-      "tx_hash": "fe49445b5515907750e237b3a2ce7186e89bb7d33ba1081ea2db54d476510fc7",
-      "version": 1,
-      "tokens": [
-        {"token": "EGLD",
-        "name": "Native Token",
-        "balance": "3333"
-        }
-       ]
-    }
-  ]
-}
+export const mockup_data = {"data":{"address":"erd1epkx9qhjqzdlp5yalatcr0e7dtn0lphdd5dtywgct5f8e0ypmjkqdj99ya","network":"devnet","versions":[{"balance":"1000000000000000000","nonce":96,"tokens":[{"balance":"1000000000000000000","identifier":"EGLD","name":"Name for EGLD"}],"tx_hash":"837f91a23cb8eb5dc4515a9ba5906bb99ba15e54f44d6f33a966ccfcc9811e9f","version":0},{"balance":"2000000000000000000","nonce":95,"tokens":[{"balance":"2000000000000000000","identifier":"EGLD","name":"Name for EGLD"}],"tx_hash":"d3ab684a42734f1d828db0f8e09297207127fa9ae61fcf54dea70254050f4aeb","version":0}]},"success":true}
 
 
 export const mockup_data_1 = {
