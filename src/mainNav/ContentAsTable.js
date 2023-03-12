@@ -1,5 +1,5 @@
 import React                 from "react"
-import {FlatList, View}      from "react-native"
+import {FlatList, View,Text}      from "react-native"
 import {mockup_data_10}       from "../mockup/mockup_accountHistory_vs1"
 import {ATableRow}           from "./ATableRow"
 import {ListHeaderComponent} from "./ListHeaderComponent"
@@ -27,10 +27,12 @@ function extractVersions(data) {
   return versions;
 }
 
-export const ContentAsTable = ({data}) => {
+export const ContentAsTable = ({data=null}) => {
+  console.log("{ContentAsTable.js}[ContentAsTable](31) data", data)
   const mockupData = mockup_data_10
   const versions = extractVersions(mockupData)
   return <View style={{marginTop:20,flex:1 ,width:'100%'}}>
+    {data&&<Text>{data.toString()}</Text>}
       <FlatList data={ versions} style={{flex:1}}
                 ListHeaderComponent={ListHeaderComponent}
                 renderItem={renderItem} keyExtractor={keyExtractor} />
