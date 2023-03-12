@@ -6,8 +6,8 @@
     "index.html": "/index.html",
     "favicon-32.png": "/favicon-32.png",
     "favicon-16.png": "/favicon-16.png",
-    "serve.json": "/serve.json",
     "manifest.json": "/manifest.json",
+    "serve.json": "/serve.json",
     "main.c2fd7272.js.map": "/static/js/main.c2fd7272.js.map",
     "927.6fa4cdbd.js.map": "/static/js/927.6fa4cdbd.js.map"
   },
