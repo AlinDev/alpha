@@ -9,6 +9,7 @@ const renderItem = ({ item,index}) => {
 }
 
 const keyExtractor = (item) => {
+  console.log('test')
   return item.version
 }
 

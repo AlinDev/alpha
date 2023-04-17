@@ -8,6 +8,7 @@ export const ScreenHome = () => {
   const [error, setError] = useState(null)
   const [data, setData] = useState(null)
 
+  console.log('test')
 
   const handlePress = () => {
     setIsLoading(true)
